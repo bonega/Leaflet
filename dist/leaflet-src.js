@@ -1,5 +1,5 @@
 /* @preserve
- * Leaflet 1.3.1, a JS library for interactive maps. http://leafletjs.com
+ * Leaflet 1.3.1+Detached: ba6f97fff8647e724e4dfe66d2ed7da11f908989.ba6f97f, a JS library for interactive maps. http://leafletjs.com
  * (c) 2010-2017 Vladimir Agafonkin, (c) 2010-2011 CloudMade
  */
 
@@ -9,7 +9,7 @@
 	(factory((global.L = {})));
 }(this, (function (exports) { 'use strict';
 
-var version = "1.3.1";
+var version = "1.3.1+HEAD.ba6f97ff";
 
 /*
  * @namespace Util
@@ -7104,7 +7104,7 @@ var IconDefault = Icon.extend({
 		if (path === null || path.indexOf('url') !== 0) {
 			path = '';
 		} else {
-			path = path.replace(/^url\(["']?/, '').replace(/marker-icon\.png["']?\)$/, '');
+			path = path.replace(/^url\(["']?/, '').replace(/marker-icon[.a-zA-Z0-9]*\.png["']?\)$/, '');
 		}
 
 		return path;
